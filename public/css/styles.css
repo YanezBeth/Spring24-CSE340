@@ -73,6 +73,14 @@ header.my-account {
   float: right;
 }
 
+.siteName, .siteName a {
+  font-family: var(--bodyfont);
+  color: var(--dgray);
+  font-size: 3rem;
+  text-decoration: none;
+
+}
+
 /* nav style */
 nav {
   background-color: var(--dgray);
@@ -108,11 +116,8 @@ nav a:hover {
   background-color: var(--mblue);
 }
 
-#content {
-  max-width: 960px;
+#wrapper {
   margin: 0 auto;
-  border: 5px solid var(--mblue);
-  border-radius: 8px;
   background-color: var(--white);
 }
 
@@ -133,6 +138,14 @@ nav a:hover {
   nav {
     flex-flow: row wrap;
     padding: 0;
+  }
+
+  #wrapper {
+    max-width: 960px;
+    margin: 0 auto;
+    border: 5px solid var(--mblue);
+    border-radius: 8px;
+    background-color: var(--white);
   }
 
 }
