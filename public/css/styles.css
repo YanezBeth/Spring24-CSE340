@@ -1,6 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter:wght@500&family=Space+Grotesk&display=swap');
+
+
 /******* Change Box Model ***************/
 *,
 *:before,
 *:after {
   box-sizing: border-box;
+}
+
+:root {
+  --white: #ffffff;
+  --lgray: #bababa;
+  --mgray: #8d8d8d;
+  --dgray: #3a3a3a;
+  --lblue: #a6cbeb;
+  --mblue: #276fae;
+  --bodyfont: 'Space Grotesk', sans-serif;
+  --hfont: 'Bitter', serif;
+  --error: #ff0000;
+}
+
+body {
+  background-image: url("/images/site/small_check.jpg");
+  font-family: var(--bodyfont);
+  margin: 0;
+  padding: 1em 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--hfont);
+  color: var(--dgray);
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: -5px;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  padding: 0;
+}
+
+/* CSS Rules for header*/
+header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  overflow: hidden;
+  width: 95%;
+}
+
+header.logo-img {
+  float: left;
+  margin: auto;
+}
+
+header.my-account {
+  float: right;
+}
+
+/* nav style */
+nav {
+  background-color: var(--dgray);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex-flow: column wrap;
+  margin: 0;
+  padding: 0;
+  overflow: auto;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav a {
+  color: var(--white);
+  display: block;
+  font-size: 1.1em;
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color 0.2s ease; /* fun hover effect */
+}
+
+nav a:hover {
+  background-color: var(--mblue);
+}
+
+#content {
+  max-width: 960px;
+  margin: 0 auto;
+  border: 5px solid var(--mblue);
+  border-radius: 8px;
+  background-color: var(--white);
+}
+
+
+
+/* ***************************************************
+       CSS Rules for any screen larger than 600px
+ **************************************************** */
+@media screen and (min-width: 600px) {
+  main {
+    padding: 10px;
+  }
+
+  nav li {
+    float: left;
+  }
+
+  nav {
+    flex-flow: row wrap;
+    padding: 0;
+  }
+
 }
