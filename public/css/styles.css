@@ -73,12 +73,14 @@ header.my-account {
   float: right;
 }
 
-.siteName, .siteName a {
+#top-header a {
+  text-decoration: none;
+}
+
+.siteName {
   font-family: var(--bodyfont);
   color: var(--dgray);
   font-size: 3rem;
-  text-decoration: none;
-
 }
 
 /* nav style */
