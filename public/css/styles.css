@@ -24,7 +24,7 @@ body {
   background-image: url("/images/site/small_check.jpg");
   font-family: var(--bodyfont);
   margin: 0;
-  padding: 3em 0;
+  padding: 1em 0;
 }
 
 h1,
